@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: records
+
+  datasource:
+    url: jdbc:postgresql://167.172.116.73:5434/raceway
+    username: raceway
+    password: w@y2@25
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+server:
+  port: 9035
+
+# JWT Configuration
+jwt:
+  secret-key: DRo3wXPnHyBb+1KXVID6x69oDg4IPi4CnmViCaENw2M=
+  expiration: 86400000  # 24 hours in milliseconds
+
+# Swagger
+#springdoc:
+#  api-docs:
+#    path: /api-docs
+#  swagger-ui:
+#    path: /swagger-ui.html
