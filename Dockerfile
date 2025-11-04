@@ -1,5 +1,5 @@
 # ----------- Build Stage -----------
-FROM openjdk:21-slim-buster AS build
+FROM openjdk:21-slim AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
