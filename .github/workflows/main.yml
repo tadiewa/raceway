@@ -46,6 +46,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags:
+          tags: |
             ${{ secrets.DOCKER_HUB_USERNAME }}/raceway-app:latest
             ${{ secrets.DOCKER_HUB_USERNAME }}/raceway-app:${{ github.sha }}
